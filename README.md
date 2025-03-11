@@ -1,4 +1,4 @@
-# VideoQA Bot
+# **VideoQA Bot**
 
 ## Overview
 VideoQA Bot is an interactive system that allows you to ask questions based on the content of a video. The system extracts audio from the video, transcribes it into text, and then uses an AI model (via OpenRouter API) to answer any queries you have related to the video's content. It leverages the Whisper model for speech-to-text conversion and the DeepSeek model for answering questions based on the transcript.
