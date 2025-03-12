@@ -12,7 +12,9 @@ The system can transcribe audio using OpenAI's Whisper model or fetch a YouTube 
 
 ![front_page_2](exmaple_images/Screenshot%202025-03-12%20151714.png)
 #### -get the answer to the query using llm model.
-
+<p align="center">
+    This is some centered text for the README.
+</p>
 
 ## Features
 
