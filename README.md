@@ -1,27 +1,46 @@
-# **VideoQA Bot**
+# Video Transcript & Question-Answering System
 
-## Overview
-VideoQA Bot is an interactive system that allows you to ask questions based on the content of a video.
+This project is a **video transcript extraction and question-answering system** that allows users to upload videos or provide YouTube URLs. It processes the video to extract the transcript and then answers questions based on the transcript using OpenRouter AI.
 
-
-1.**Whisper Model (OpenAI)**: The model transcribes audio into text, which is a form of natural language processing (NLP). It's the first step in understanding the content of the video.
-
-
-2.**DeepSeek Model (OpenRouter)**: After transcribing the audio, you use an LLM to process and generate responses to user queries based on the content. DeepSeek here acts as the LLM that generates human-like answers.
-
----
+The system can transcribe audio using OpenAI's Whisper model or fetch a YouTube transcript directly. It also leverages the OpenRouter API to generate AI-based responses to user queries based on the extracted transcript.
 
 ## Features
-- **Speech-to-Text Transcription**: Extracts audio from the video and converts it to text using the Whisper model.
-- **Question-Answering**: Allows users to ask questions based on the video transcript, providing relevant answers using the DeepSeek model via the OpenRouter API.
-- **Interactive**: Continuously runs in a loop, processing new videos and queries until the user opts to 
----
 
-## Requirements
-1. **Python 3.x**  
-   Ensure you have Python 3.x installed.
-   
-2. **Libraries**:  
-   Install the following libraries using `pip`:
-   ```bash
-   pip install whisper requests
+- **Video Upload or YouTube URL Input**: Users can either upload a local video file or provide a YouTube URL for processing.
+- **Transcript Extraction**: Transcribes the audio of the uploaded video or YouTube video.
+- **Question-Answering**: Ask questions based on the extracted transcript, and get AI-generated answers using OpenRouter.
+- **Supports Multiple Video Formats**: MP4, AVI, MOV, MKV, WebM, etc.
+
+## Prerequisites
+
+- Python 3.x
+- FFmpeg (for video-to-audio conversion)
+- Environment variables for Google API and OpenRouter API
+
+## How It Works
+
+1. **Video Processing**:
+    - If a local video is uploaded, the video is converted into an audio file (WAV format) using **FFmpeg**.
+    - If a YouTube URL is provided, the transcript is fetched directly using the **YouTube Transcript API**.
+
+2. **Transcription**:
+    - For local videos, the audio is transcribed using **OpenAI Whisper**.
+    - For YouTube videos, the transcript is fetched if available.
+
+3. **Question-Answering**:
+    - The extracted transcript is then used to generate answers to user queries using the **OpenRouter AI** API.
+
+## Environment Variables
+
+The following environment variables must be set for the project to function properly:
+
+- `GOOGLE_API_KEY`: Your Google API key.
+- `API_KEY`: Your OpenRouter API key.
+
+## Troubleshooting
+
+- **FFmpeg Error**: If you encounter an error related to FFmpeg, ensure that FFmpeg is correctly installed and added to your system's PATH.
+- **No Transcript Available**: For YouTube videos, if no transcript is available, the system will return an error message.
+
+
+
