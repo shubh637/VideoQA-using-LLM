@@ -5,13 +5,13 @@ This project is a **video transcript extraction and question-answering system** 
 The system can transcribe audio using OpenAI's Whisper model or fetch a YouTube transcript directly. It also leverages the OpenRouter API to generate AI-based responses to user queries based on the extracted transcript.
 ### Web App Screenshot
 ![front page](exmaple_images/Screenshot%202025-03-12%20150528.png)
-##### User interface.
+#### -User interface.
 
 ![front_page_1](exmaple_images/Screenshot%202025-03-12%20150541.png)
-##### can take youtube link or normal video.
+#### -can take youtube link or normal video.
 
 ![front_page_2](exmaple_images/Screenshot%202025-03-12%20151714.png)
-##### get the answer to the query using llm model.
+#### -get the answer to the query using llm model.
 
 
 ## Features
