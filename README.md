@@ -45,6 +45,10 @@ The system can transcribe audio using OpenAI's Whisper model or fetch a YouTube 
 
 3. **Question-Answering**:
     - The extracted transcript is then used to generate answers to user queries using the **OpenRouter AI** API.
+      
+4. **Downloading chat History**:
+    - User can download chat history in the **txt** format.
+   
 
 ## Environment Variables
 
