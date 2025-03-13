@@ -30,7 +30,7 @@ animation: gradient-animation 12s ease infinite;
   }}
 }}
 </style>"""
-st.markdown(background, unsafe_allow_html=True)
+# st.markdown(background, unsafe_allow_html=True) uncomment it for css.
 # Streamlit page config
 st.title("Video Transcript & Question-Answering System")
 st.write("Upload a video or provide a YouTube URL, and ask questions based on the transcript.")
