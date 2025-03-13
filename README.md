@@ -1,4 +1,4 @@
-# Video Transcript & Question-Answering System
+# **Video Transcript & Question-Answering System**
 
 This project is a **video transcript extraction and question-answering system** that allows users to upload videos or provide YouTube URLs. It processes the video to extract the transcript and then answers questions based on the transcript using OpenRouter AI.
 
